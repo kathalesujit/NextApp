@@ -1,0 +1,36 @@
+.heading {
+  padding-top: 3vh;
+
+}
+
+.background {
+  background-image: linear-gradient(to right top, #538eda, #46a9de, #64c0d9, #92d4d6, #c1e5db);
+}
+
+.table-head {
+  background-color: #d6e6ee;
+}
+
+.errmsg {
+  font-size: small;
+}
+
+.card11 {
+  padding: 150px;
+}
+
+.bg {
+  background-color: #97DECE;
+}
+
+Table {
+  background-color: white;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.buttonalignment {
+  gap: 520px
+}

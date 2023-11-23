@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import NavBar from '../../../Components/NavBar';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { IoMdArrowBack } from 'react-icons/io'
 import { Button, Col, Row } from 'reactstrap';
 export default function tododetails(props) {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Router from 'next/router';
-import { Navbar, NavbarBrand, Nav, Button, NavbarToggler, Collapse } from "reactstrap";
+import { Navbar,NavLink, NavItem, NavbarBrand, Nav, Button, NavbarToggler, Collapse } from "reactstrap";
 export default function NavBar(props) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,8 +16,19 @@ export default function NavBar(props) {
         
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-           
+        <Nav className="me-auto" navbar>
+          
+          <NavItem>
+              <NavLink onClick={() => {Router.push('/home')}}>
+                Home
+              </NavLink>
+            </NavItem>
+           <NavItem>
+              <NavLink onClick={() => {Router.push('/demo')}}>
+                Demo
+              </NavLink>
+          </NavItem>
+          
           </Nav>{
             props.path!=="/"?
             <Button color='danger' onClick={() => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import NavBar from '../Components/NavBar'
+import NavBar from '../Components/NavBar';
 import { Card, CardBody, Container, Row, Col, Form, FormGroup, Label, Input, Button } from "reactstrap";
 import Router from 'next/router';
 import { ToastContainer, toast } from 'react-toastify';
@@ -57,7 +57,7 @@ export default function Login(props) {
                 <Row>
                     <Col lg={5} className="container">
                         <Card>
-                            <p>Log In</p>
+                            <h4 style={{ color: '#45474B', textAlign: 'center', paddingTop: '10px' }}>LOGIN</h4>
                             <CardBody>
                                 <Form>
                                     <FormGroup>
